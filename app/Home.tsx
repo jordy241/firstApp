@@ -9,7 +9,7 @@ export default function Home() {
       <TextInput style={{ backgroundColor: '#ff00ff', width: 100}}></TextInput>
       <Button title="Click me" onPress={() => alert('Button clicked!')}/>
       <ScrollView>
-        {[...Array(10).keys()].map((i) => <Person key={i} name={`Person ${i}`} age={i} />)}
+        {[...Array(30).keys()].map((i) => <Person key={i} name={`Person ${i}`} age={i} />)}
       </ScrollView>  
     </View>
   );
@@ -18,7 +18,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2e3680',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -9,7 +9,7 @@ type PersonProps = {
 
 const Person = (props: PersonProps) => {
   return (
-    <View>
+    <View style={{ padding: 10 }}>
       <Text>{props.name}</Text>
     </View>
   )
